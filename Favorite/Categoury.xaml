@@ -1,0 +1,27 @@
+﻿<Window x:Class="Favorite.AddCate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Favorite"
+        mc:Ignorable="d"
+        Style="{StaticResource CustomToolWindowStyle}"
+        Title="Categoury" Height="300" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Padding="3" Text="title" Name="TBTitle" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0,0,50,0" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" />
+        <Image Name="ImageMain" Source="/Resoucre/Categoriz.png" VerticalAlignment="Center" Grid.Row="0" Height="96" Width="96"  Grid.Column="0"/>
+        <Button Click="ImportImage" Margin="20,0,10,20" Grid.Row="2" Grid.Column="1" Content="Import Image" Padding="5" VerticalAlignment="Bottom"/>
+        <Button Click="Addcate" Grid.Row="2" Grid.Column="2" Content="Add Cate" Padding="5" VerticalAlignment="Bottom" Margin="10,0,20,20"/>
+
+    </Grid>
+</Window>
